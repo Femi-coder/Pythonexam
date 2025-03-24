@@ -61,4 +61,9 @@ def update_montly_rent(self, new_rent):
             self.montly_rent = new_rent
         else:
          print("monthly rent must be a number.")
-        
+         
+def update_is_furnished(self, furnished_status):
+        if isinstance(furnished_status, bool):
+            self.is_furnished = furnished_status
+        else:
+            print("is_furnished must be a boolean value (True or False).")
