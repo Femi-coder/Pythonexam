@@ -76,3 +76,6 @@ rental = RentalHouse(50, "Pine avenue", "Dublin 5", 2,280000, 1500, True)
 #A9 Calling the display method
 print("Displaying House Info:")
 my_house.display_info()
+
+print("\nDisplaying Rental House Info:")
+rental.display_full_info()
