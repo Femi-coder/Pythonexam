@@ -72,3 +72,7 @@ def update_is_furnished(self, furnished_status):
 #A8 Creating Instances
 my_house = House(23, "Elm Street", "Dublin 8", 3, 350000)
 rental = RentalHouse(50, "Pine avenue", "Dublin 5", 2,280000, 1500, True)
+
+#A9 Calling the display method
+print("Displaying House Info:")
+my_house.display_info()
