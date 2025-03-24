@@ -55,7 +55,7 @@ def display_full_info(self):
         super().display_info()
         print(f"Rental Info -> Rent: €{self.monthly_rent}/month, Furnished: {'Yes' if self.is_furnished else 'No'}")
         
- #A7 Updating Methods for extra attributes
+#A7 Updating Methods for extra attributes
 def update_montly_rent(self, new_rent):
         if isinstance(new_rent, (int,float)):
             self.montly_rent = new_rent
@@ -67,3 +67,8 @@ def update_is_furnished(self, furnished_status):
             self.is_furnished = furnished_status
         else:
             print("is_furnished must be a boolean value (True or False).")
+            
+
+#A8 Creating Instances
+my_house = House(23, "Elm Street", "Dublin 8", 3, 350000)
+rental = RentalHouse(50, "Pine avenue", "Dublin 5", 2,280000, 1500, True)
