@@ -6,3 +6,7 @@ class House:
         self.area = area
         self.number_of_beds = number_of_beds
         self.price = price 
+        
+#A3 Mtehod to print atributes
+def display_info(self):
+    print(f"House Info No: {self.house_number}, Street: {self.street}, Area: {self.area}, Beds: {self.number_of_beds}, Price: €{self.price}")
