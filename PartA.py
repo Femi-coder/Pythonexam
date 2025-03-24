@@ -54,3 +54,11 @@ class RentalHouse(House):
 def display_full_info(self):
         super().display_info()
         print(f"Rental Info -> Rent: €{self.monthly_rent}/month, Furnished: {'Yes' if self.is_furnished else 'No'}")
+        
+ #A7 Updating Methods for extra attributes
+def update_montly_rent(self, new_rent):
+        if isinstance(new_rent, (int,float)):
+            self.montly_rent = new_rent
+        else:
+         print("monthly rent must be a number.")
+        
