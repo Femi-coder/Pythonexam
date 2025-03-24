@@ -12,3 +12,7 @@ def test_is_instance(self):
     self.assertIsInstance(self.house1, House)
     self.assertIsInstance(self.rental1, RentalHouse)
     self.assertIsInstance(self.rental1, House)
+    
+# B3: Test if object is NOT an instance of a class
+def test_is_not_instance(self):
+        self.assertNotIsInstance(self.house1, RentalHouse)
