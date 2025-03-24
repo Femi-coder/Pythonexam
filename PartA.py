@@ -49,3 +49,8 @@ class RentalHouse(House):
         super().__init__(house_number, street, area, number_of_beds, price)
         self.monthly_rent = monthly_rent
         self.is_furnished = is_furnished
+        
+#A6 Method to print all the attributes
+def display_full_info(self):
+        super().display_info()
+        print(f"Rental Info -> Rent: €{self.monthly_rent}/month, Furnished: {'Yes' if self.is_furnished else 'No'}")
