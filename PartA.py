@@ -41,3 +41,11 @@ def update_price(self, new_price):
         self.price = new_price
     else:
         print("price must be a number.")
+        
+        
+#A5 Im doing Rental House
+class RentalHouse(House):
+ def __init__(self, house_number, street, area, number_of_beds, price, monthly_rent, is_furnished):
+        super().__init__(house_number, street, area, number_of_beds, price)
+        self.monthly_rent = monthly_rent
+        self.is_furnished = is_furnished
