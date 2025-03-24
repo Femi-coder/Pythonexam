@@ -16,3 +16,11 @@ def test_is_instance(self):
 # B3: Test if object is NOT an instance of a class
 def test_is_not_instance(self):
         self.assertNotIsInstance(self.house1, RentalHouse)
+        
+# B4: Testing if 2 objects are identical
+def test_objects_identity(self):
+    same_house = self.house1
+    self.assertsIs(self.house1, same_house)
+    
+    another_house = House(2,"Banana Ireland","Dublin 1", 3, 400000)
+    self.assertIsNot(self.house1, another_house)
