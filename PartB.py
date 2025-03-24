@@ -50,3 +50,6 @@ def test_update_rental_methods(self):
         self.rental1.update_is_furnished(False)
         self.assertFalse(self.rental1.is_furnished)
     
+#B6 main function to run the task
+if __name__ == '__main__':
+    unittest.main()
