@@ -71,11 +71,23 @@ def update_is_furnished(self, furnished_status):
 
 #A8 Creating Instances
 my_house = House(23, "Elm Street", "Dublin 8", 3, 350000)
-rental = RentalHouse(50, "Pine avenue", "Dublin 5", 2,280000, 1500, True)
+rental = RentalHouse(50, "Pine avenue", "Dublin 5", 2, 280000, 1500, True)
 
 #A9 Calling the display method
 print("Displaying House Info:")
 my_house.display_info()
 
 print("\nDisplaying Rental House Info:")
+rental.display_full_info()
+
+#A10 Performing updates on the base class
+print("\n--- Updating House ---")
+my_house.update_price(350000)
+my_house.update_number_of_beds(3)
+my_house.display_info()
+
+# A10: Perform updates on child class (2 examples)
+print("\n--- Updating Rental House ---")
+rental.update_monthly_rent(280000)
+rental.update_is_furnished(False)
 rental.display_full_info()
