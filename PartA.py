@@ -9,7 +9,7 @@ class House:
         
 #A3 Mtehod to print atributes
 def display_info(self):
-    print(f"House Info No: {self.house_number}, Street: {self.street}, Area: {self.area}, Beds: {self.number_of_beds}, Price: €{self.price}")
+        print(f"House Info -> No: {self.house_number}, Street: {self.street}, Area: {self.area}, Beds: {self.number_of_beds}, Price: €{self.price}")
     
  #A4 Method to update atributes
 def update_house_number(self, new_number):
@@ -53,10 +53,10 @@ class RentalHouse(House):
 #A6 Method to print all the attributes
 def display_full_info(self):
         super().display_info()
-        print(f"Rental Info -> Rent: €{self.monthly_rent}/month, Furnished: {'Yes' if self.is_furnished else 'No'}")
+        print(f"Rental Info Rent: €{self.monthly_rent}/month, Furnished: {'Yes' if self.is_furnished else 'No'}")
         
 #A7 Updating Methods for extra attributes
-def update_montly_rent(self, new_rent):
+def update_monthly_rent(self, new_rent):
         if isinstance(new_rent, (int,float)):
             self.montly_rent = new_rent
         else:
