@@ -24,3 +24,29 @@ def test_objects_identity(self):
     
     another_house = House(2,"Banana Ireland","Dublin 1", 3, 400000)
     self.assertIsNot(self.house1, another_house)
+    
+#B5 Testing update methods in house
+def test_update_methods(self):
+    self.house1.update_price(420000)
+    self.assertEqual(self.house1.price, 420000)
+
+    self.house1.update_number_of_beds(4)
+    self.assertEqual(self.house1.number_of_beds, 4)
+
+    self.house1.update_street("Updated Street")
+    self.assertEqual(self.house1.street, "Updated Street")
+
+    self.house1.update_area("Dublin 5")
+    self.assertEqual(self.house1.area, "Dublin 5")
+
+    self.house1.update_house_number(202)
+    self.assertEqual(self.house1.house_number, 202)
+    
+#B5 Testing Updates in the rental house part
+def test_update_rental_methods(self):
+        self.rental1.update_monthly_rent(1600)
+        self.assertEqual(self.rental1.monthly_rent, 1600)
+
+        self.rental1.update_is_furnished(False)
+        self.assertFalse(self.rental1.is_furnished)
+    
